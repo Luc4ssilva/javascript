@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+       @import url('https://fonts.googleapis.com/css2?family=Oleo+Script&family=Tapestry&display=swap');
+
+    :root{
+        --fonte-padrao: 'Oleo Script', cursive;
+    }
+        
+
+        body{
+            font-family: var(--fonte-padrao);
+           background-color: gray;
+            font-size: 2em;
+            font-weight: normal;
+            text-align: center;
+        }
+
+        body span{
+            color: gray;
+        }
+
+        body span:hover{
+            color: yellow;
+            background-color: red;
+        }
+
+        h2{
+            font-family: var(--fonte-padrao);
+        }
+
+        main{
+            background-color: white;
+            max-width: 500px;
+            margin: auto;
+            border-radius: 10px;
+            padding: 10px;
+        }
+    
+
+    </style>
+</head>
+<body>
+    <main>
+    <script>
+        var nome = window.prompt('Qual é o seu nome?')
+        document.write(`<p>Olá ${nome}. Seu nome tem <span>${nome.length}</span> letras</p>`)
+        document.write(`Seu nome em letras maiúsculas é ${nome.toUpperCase()} <br>`)
+        document.write(`Seu nome em minusculas é ${nome.toLowerCase()}`)
+    </script>
+    </main>
+</body>
+</html>
