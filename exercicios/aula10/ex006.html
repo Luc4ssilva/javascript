@@ -18,12 +18,16 @@
         }
     </style>
 </head>
-<body onmousemove="interaja()">
-    <div id="area" onclick="clicar()" onmouseover="entrar()" onmouseout="sair()">
+<body>
+    <div id="area">
         Interaja...
     </div>
     <script>
         var a = window.document.getElementById('area')
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseover', entrar)
+        a.addEventListener('mouseout', sair)
+        
         function clicar() {
             a.innerText = 'Clicou!'
             a.style.background = 'blue'
