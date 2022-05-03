@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicoes idade</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=VT323&family=Water+Brush&display=swap');
+
+        body{
+            background-color: lightblue;
+        }
+        input#idade{
+            width: 50px;
+        }
+
+        div{
+            margin-top: 20px;
+            font: normal 25pt 'VT323';
+
+        }
+
+        h1{
+            font-family: 'VT323';
+            font-size: 35pt;
+        }
+    </style>
+</head>
+<body>
+    <h1>Digite sua idade</h1>
+    <input type="number" name="idade" id="idade">
+    <input type="button" value="Clique" onclick="clicou()">
+    <div id="res">
+
+    </div>
+    <script>
+        function clicou(){
+            var idade = window.document.querySelector('input#idade')
+            var i1 = Number(idade.value)
+            var res = window.document.querySelector('div#res')
+            var resta = 18 - i1
+            var fazem = i1 - 18
+            if (i1 >= 18){
+                res.innerHTML = `Você é maior de idade há <strong>${fazem} anos :)</strong>`
+            }
+            else{
+                res.innerHTML = `Você é de menor. Faltam <strong>${resta} anos</strong> para você ser de maior :) `
+            }
+        }
+    </script>
+</body>
+</html>
