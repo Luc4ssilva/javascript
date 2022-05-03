@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de multas</title>
+</head>
+<body>
+    <h1>Sistema de Multas</h1>
+    <h2>Velocidade máxima: 60KM/h</h2>
+    <p>Digite uma velocidade para saber se você foi multado.</p>
+    <input type="number" name="veltxt" id="veltxt">
+    <input type="button" value="verificar" onclick="clicou()">
+    <div id="res">
+
+    </div>
+    <script>
+        function clicou(){
+            var veltxt = window.document.querySelector('input#veltxt')
+            var vel = Number(veltxt.value)
+            var res = window.document.querySelector('div#res')
+            res.innerHTML = `<p>Sua velocidade é <strong>${vel}Km/h</strong></p>`
+            if (vel > 60){
+                res.innerHTML += `Você ultrapassou o limite de velocidade. <strong>MULTADO!</strong>`
+            }
+            res.innerHTML += `<p>Dirija sempre com cinto de segurança!</p>`
+
+        }
+    </script>
+</body>
+</html>
