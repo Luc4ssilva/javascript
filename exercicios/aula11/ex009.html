@@ -5,9 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pais</title>
+    <style>
+        div{
+            margin-top: 20px;
+            font-size: 15pt;
+        }
+        span{
+            font-weight: bold;
+            color: green;
+        }
+    </style>
 </head>
 <body>
-    <h1>Diga o seu país</h1>
+    <h1>Digite o seu país</h1>
     <input type="text" name="texto" id="texto">
     <input type="button" value="verificar" onclick="clicou()">
     <div id="res">
@@ -17,12 +27,12 @@
         function clicou(){
         var pais = window.document.querySelector('input#texto').value.toUpperCase()
         var res = window.document.querySelector('div#res') 
-        res.innerHTML = `<p>Vivendo em ${pais}</p>`
+        res.innerHTML = `Vivendo em <span>${pais}</span>`
         if (pais == 'BRASIL'){
-            res.innerHTML += `<p>Você é <strong>brasileiro</strong></p>`
+            res.innerHTML += `. Você é <strong>brasileiro</strong>`
         }
         else{
-            res.innerHTML += `<p>Você é <strong>estrangeiro</strong></p>`
+            res.innerHTML += `. Você é <strong>estrangeiro</strong>`
         }
         }
 
