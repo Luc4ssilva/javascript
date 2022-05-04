@@ -4,5 +4,5 @@ function clicou(){
     var valor1 = Number(valor.value);
     var res = document.querySelector('div#res');
     var resultado = (5 / 9) * (valor1 - 32);
-    res.innerHTML = `A temperatura é de <strong>${resultado.toFixed(1)}</strong> graus celsius`;
+    res.innerHTML = `A temperatura é de <strong>${resultado.toFixed(3)}</strong> graus celsius`;
 }
