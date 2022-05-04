@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor</title>
+    <style>
+        body{
+            text-align: center;
+            background-color: blueviolet;
+        }
+
+        main{
+            width: 400px;
+            margin: auto;
+            background-color: white;
+            height: 60vh;
+            border-radius: 10px;
+            box-shadow: 5px 5px 13px rgba(0, 0, 0, 0.39);
+            padding: 5px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        input#txtfar{
+            width: 80px;
+        }
+
+        div{
+            font: normal 15pt Arial;
+            margin-top: 10px;
+        }
+        p{
+            color: black;
+            font: normal 1em Arial;
+            
+            
+        }
+    </style>
+</head>
+<body>
+  <main>
+    <h1>Conversor de fahrenheit para celsius</h1>
+    <p id="texto">Digite o valor em fahrenheit </p>
+    <input type="text" name="txtfar" id="txtfar">
+    <input type="button" value="converter" onclick="clicou()">
+    <div id="res"></div>
+    <script src="index.js">
+     
+    </script>
+  </main>
+</body>
+</html>
