@@ -6,3 +6,9 @@ function clicou(){
     var resultado = (5 / 9) * (valor1 - 32);
     res.innerHTML = `A temperatura é de <strong>${resultado.toFixed(3)}</strong> graus celsius`;
 }
+function escuro(){
+    document.querySelector('main#noturno').style.background = 'black'
+
+}
+
+   
