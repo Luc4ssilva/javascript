@@ -38,7 +38,7 @@ function verificar(){
         
         res.style.textAlign = 'center'
         img.style.marginTop = '20px'
-        res.innerHTML = `<strong>${genero} com idade ${idade} anos.</strong><br>`
+        res.innerHTML = `<strong>${genero} com ${idade} anos de idade.</strong><br>`
         res.appendChild(img)
     }
 }
